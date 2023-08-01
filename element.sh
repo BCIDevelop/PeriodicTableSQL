@@ -18,7 +18,7 @@ then
 else
  
  IFS='|' read ID NAME TYPE ATOMIC_MASS MELTING BOILING SYMBOL <<< $ELEMENT
- echo "The element with atomic number 1 is $NAME ($SYMBOL). It's a $TYPE, with a mass of $ATOMIC_MASS amu. $NAME has a melting point of $MELTING celsius and a boiling point of $BOILING celsius."
+ echo "The element with atomic number $ID is $NAME ($SYMBOL). It's a $TYPE, with a mass of $ATOMIC_MASS amu. $NAME has a melting point of $MELTING celsius and a boiling point of $BOILING celsius."
 fi
 else 
   echo Please provide an element as an argument.
